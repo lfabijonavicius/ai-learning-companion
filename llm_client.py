@@ -65,3 +65,29 @@ class LLMClient:
         #Return a list of Questions    
         return questions
         
+    def evaluate_answer(self, question: Question, user_answer: str) -> bool:
+        """Evaluate if user's answer is correct using AI for freeform questions"""
+        
+        #For MCQ comparing strings
+        if question.type == "mcq":
+            return user_answer == question.correct_answer
+        
+        else:
+            prompt = f"""Question: {question.text} 
+        Correct answer: {question.correct_answer}
+        User's answer: {user_answer} 
+        
+        Is the user's answer correct? Evaluate if correct and if it's relevant.
+        Respond only with one word: "correct or "incorrect"."""
+        
+        response = self.client.chat.completions.create(
+            model="chatgpt-4o-latest", 
+            messages=[
+                {"role": "system", "content": "You are a helpful study assistant that provides educational questions."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        response_text = response.choices[0].message.content
+        
+        #Check if AI responds with "correct"
+        return "correct" in response_text.lower()
