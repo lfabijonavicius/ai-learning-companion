@@ -1,6 +1,7 @@
 from quiz_manager import QuizManager
 from llm_client import LLMClient
 from question import Question
+from datetime import datetime
 
 def generate_questions_mode(quiz_manager: QuizManager, llm_client: LLMClient) -> None:
     """Generate new questions using LLM"""
@@ -19,7 +20,7 @@ def generate_questions_mode(quiz_manager: QuizManager, llm_client: LLMClient) ->
     quiz_manager.add_questions(questions)
     print(f"Generated {len(questions)} questions!")
 
-def view_statistics(quiz_manager: QuizManager) -> None:
+def view_statistics(quiz_manager: QuizManager, llm_client: LLMClient) -> None:
     """Display statistics about questions"""
     print("\n=== Question Statistics ===")
 
@@ -48,6 +49,13 @@ def view_statistics(quiz_manager: QuizManager) -> None:
             avg_success = sum(q.get_correct_percentage() for q in shown_questions) / len(shown_questions)
             print(f"    Average success rate: {avg_success:.1f}%")
             print(f"    Questions attempted: {len(shown_questions)}/{len(questions)}")
+
+    #Display token usage
+    token_usage = llm_client.get_token_usage()
+    print(f"\n=== API Token Usage ===")
+    print(f"Prompt tokens: {token_usage['prompt_tokens']}")
+    print(f"Completion tokens: {token_usage['completion_tokens']}")
+    print(f"Total tokens: {token_usage['total_tokens']}")
 
 def run_quiz(quiz_manager: QuizManager, llm_client: LLMClient, mode: str) -> None:
     """Run a quiz session (shared by practice and test modes)"""
@@ -114,10 +122,72 @@ def practice_mode(quiz_manager: QuizManager, llm_client: LLMClient) -> None:
     run_quiz(quiz_manager, llm_client, "practice")
 
 def test_mode(quiz_manager: QuizManager, llm_client: LLMClient) -> None:
-    """Test mode with random question selection"""
+    """Test mode with unique random questions and results logging"""
     print("\n=== Test Mode ===")
-    print("(Random questions)")
-    run_quiz(quiz_manager, llm_client, "test")
+    print("(Random questions, no repetition)")
+
+    if not quiz_manager.questions:
+        print("\nNo questions available! Please generate questions first.")
+        return
+
+    try:
+        num_questions = int(input("\nHow many questions? (default 5): ").strip() or "5")
+    except ValueError:
+        print("Invalid number. Using 5 questions")
+        num_questions = 5
+
+    #Select unique random questions (no repetition)
+    questions = quiz_manager.select_unique_random_questions(num_questions)
+
+    if not questions:
+        print("\nNo enabled questions available!")
+        return
+
+    actual_count = len(questions)
+    if actual_count < num_questions:
+        print(f"\nOnly {actual_count} questions available (requested {num_questions})")
+
+    print(f"\nLet's start the test with {actual_count} questions!\n")
+    score = 0
+
+    #Loop through pre-selected questions
+    for i, question in enumerate(questions, 1):
+        #Display question
+        print(f"\nQuestion {i}/{actual_count}:")
+        print(question.text)
+
+        #Display options for MCQ
+        if question.type == "mcq":
+            for idx, option in enumerate(question.options, 1):
+                print(f" {idx}. {option}")
+
+        #Get user answer
+        user_answer = input("Your answer: ").strip()
+
+        #Evaluate answer
+        is_correct = llm_client.evaluate_answer(question, user_answer)
+
+        #Record attempt
+        question.record_attempt(is_correct)
+        quiz_manager.save_questions()
+
+        #Show feedback
+        if is_correct:
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Incorrect. Correct answer is: {question.correct_answer}")
+
+    #Final results
+    print(f"\n{'='*50}")
+    print(f"Test complete! You scored {score}/{actual_count}")
+    print(f"{'='*50}")
+
+    #Log results to file with timestamp
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open("results.txt", "a") as f:
+        f.write(f"{timestamp} - Score: {score}/{actual_count}\n")
+    print("\nResults saved to results.txt")
 
 def manage_questions(quiz_manager: QuizManager) -> None:
     """Manage questions (enable/disable/list)"""
@@ -186,7 +256,7 @@ def main():
         if choice == "1":
             generate_questions_mode(quiz_manager, llm_client)
         elif choice == "2":
-            view_statistics(quiz_manager)
+            view_statistics(quiz_manager, llm_client)
         elif choice == "3":
             practice_mode(quiz_manager, llm_client)
         elif choice == "4":

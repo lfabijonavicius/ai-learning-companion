@@ -13,9 +13,9 @@ class QuizManager:
     def load_questions(self) -> None:
         """Loading questions from JSON"""
         try:
-            with open(self.filename,'r') as file:   #Open    
-                data = json.load(file)              #Read JSON
-                for q_dict in data:                 #Loop through data and convert each dict to Question object
+            with open(self.filename,'r') as file:   
+                data = json.load(file)              
+                for q_dict in data:                
                     question = Question.from_dict(q_dict)
                     self.questions.append(question)        
         except FileNotFoundError:
@@ -56,6 +56,16 @@ class QuizManager:
         """Test mode, generates random questions"""
         enabled = [q for q in self.questions if q.enabled]
         if not enabled:
-            return None 
+            return None
         #Returns 1 item directly (not a list like random.choices)
         return random.choice(enabled)
+
+    def select_unique_random_questions(self, count: int) -> List[Question]:
+        """Select unique random questions for test mode (no repetition)"""
+        enabled = [q for q in self.questions if q.enabled]
+        if not enabled:
+            return []
+
+        #Select up to 'count' questions, or all available if fewer
+        actual_count = min(count, len(enabled))
+        return random.sample(enabled, actual_count)
