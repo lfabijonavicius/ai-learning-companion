@@ -24,9 +24,5 @@ ENV/
 .coverage
 htmlcov/
 
-# Generated data files
-questions.json
-results.txt
-
 # macOS
 .DS_Store

@@ -1,0 +1,701 @@
+[
+    {
+        "id": "8bd64bd0-7125-4be9-b74c-5683c5de20d3",
+        "topic": "history",
+        "text": "Which treaty officially ended World War I and imposed heavy reparations on Germany?",
+        "type": "mcq",
+        "correct_answer": "Treaty of Versailles",
+        "options": [
+            "Treaty of Paris",
+            "Treaty of Tordesillas",
+            "Treaty of Versailles",
+            "Treaty of Ghent"
+        ],
+        "source": "generated",
+        "enabled": false,
+        "times_shown": 4,
+        "times_correct": 3
+    },
+    {
+        "id": "9dd239f3-fb67-4fd3-8395-64a0504dd6a8",
+        "topic": "history",
+        "text": "Explain the primary causes of the fall of the Roman Empire.",
+        "type": "freeform",
+        "correct_answer": "Political instability, economic troubles, military defeats, and invasions by barbarian tribes contributed to the fall of the Roman Empire.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "d4d0d610-8b75-45dc-ad5e-3f2c6fcb2ccb",
+        "topic": "history",
+        "text": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+        "type": "mcq",
+        "correct_answer": "Nikita Khrushchev",
+        "options": [
+            "Joseph Stalin",
+            "Leonid Brezhnev",
+            "Nikita Khrushchev",
+            "Mikhail Gorbachev"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 1
+    },
+    {
+        "id": "aa048257-e89e-4d7d-8694-723c723eba6b",
+        "topic": "history",
+        "text": "Describe the significance of the Meiji Restoration in Japanese history.",
+        "type": "freeform",
+        "correct_answer": "The Meiji Restoration marked the end of the Tokugawa shogunate and the modernization and industrialization of Japan, transforming it into a major world power.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 1
+    },
+    {
+        "id": "c6fcab91-3b4b-4120-a783-0239f0231a89",
+        "topic": "history",
+        "text": "Which empire was ruled by Suleiman the Magnificent at its peak?",
+        "type": "mcq",
+        "correct_answer": "Ottoman Empire",
+        "options": [
+            "Roman Empire",
+            "Mughal Empire",
+            "Ottoman Empire",
+            "Persian Empire"
+        ],
+        "source": "generated",
+        "enabled": false,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "3de306f2-0099-4318-a8fd-c041ae2112ef",
+        "topic": "mobile data",
+        "text": "Which generation of mobile network technology introduced high-speed data transfer suitable for streaming HD videos and significantly improved latency?",
+        "type": "mcq",
+        "correct_answer": "4G LTE",
+        "options": [
+            "2G",
+            "3G",
+            "4G LTE",
+            "5G"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 9,
+        "times_correct": 8
+    },
+    {
+        "id": "1ac1fd11-4952-4f56-9c0c-fe6c229c12fa",
+        "topic": "mobile data",
+        "text": "Explain how data roaming works when a mobile user travels internationally.",
+        "type": "freeform",
+        "correct_answer": "Data roaming occurs when a mobile device connects to a network outside its home country through agreements between network providers, often incurring additional charges depending on the user's plan.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 1
+    },
+    {
+        "id": "9e6931f7-30c8-4d0c-9a23-b4f8a7a74f75",
+        "topic": "mobile data",
+        "text": "Which of the following technologies is primarily used to compress data in mobile networks to optimize bandwidth usage?",
+        "type": "mcq",
+        "correct_answer": "Header compression",
+        "options": [
+            "Data tunneling",
+            "Header compression",
+            "Load balancing",
+            "NAT traversal"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 6,
+        "times_correct": 5
+    },
+    {
+        "id": "f58c92e1-3665-4d78-ad99-4165f75524dc",
+        "topic": "mobile data",
+        "text": "Describe the role of the APN (Access Point Name) in mobile data connectivity.",
+        "type": "freeform",
+        "correct_answer": "The APN determines how a mobile device connects to the internet or other networks through the carrier, defining network settings such as IP address assignment and security protocols.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 3,
+        "times_correct": 1
+    },
+    {
+        "id": "0f850aa0-3d5d-410e-b397-5ccd4fe6eb9f",
+        "topic": "recent history",
+        "text": "Which major international agreement did the United States rejoin in 2021 after previously withdrawing under a different administration?",
+        "type": "mcq",
+        "correct_answer": "Paris Agreement",
+        "options": [
+            "NAFTA",
+            "Paris Agreement",
+            "Kyoto Protocol",
+            "Trans-Pacific Partnership"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "30aa1ed8-99e4-4dec-83c4-68752385a0e7",
+        "topic": "recent history",
+        "text": "What was the primary cause of the global supply chain disruption in 2021?",
+        "type": "freeform",
+        "correct_answer": "COVID-19 pandemic",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 3,
+        "times_correct": 1
+    },
+    {
+        "id": "838a040f-d088-4c08-ae70-35a730f14612",
+        "topic": "recent history",
+        "text": "Who won the 2022 French presidential election?",
+        "type": "mcq",
+        "correct_answer": "Emmanuel Macron",
+        "options": [
+            "Marine Le Pen",
+            "Jean-Luc M\u00e9lenchon",
+            "Emmanuel Macron",
+            "\u00c9ric Zemmour"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 5,
+        "times_correct": 5
+    },
+    {
+        "id": "c5300639-d0be-41ab-b997-fae1c9f547db",
+        "topic": "recent history",
+        "text": "What is the name of the 2020 agreement that established normalized relations between Israel and several Arab nations including the UAE and Bahrain?",
+        "type": "freeform",
+        "correct_answer": "Abraham Accords",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 4,
+        "times_correct": 1
+    },
+    {
+        "id": "b1f632ac-f5d3-4b6a-a845-ad4f2c589619",
+        "topic": "recent history",
+        "text": "Which event led to the complete withdrawal of U.S. troops from Afghanistan in 2021?",
+        "type": "mcq",
+        "correct_answer": "Taliban takeover of Kabul",
+        "options": [
+            "NATO summit decision",
+            "UN Security Council resolution",
+            "Taliban takeover of Kabul",
+            "Afghan presidential election"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 3,
+        "times_correct": 3
+    },
+    {
+        "id": "6c12f671-6fc3-4892-af80-17a3f123568a",
+        "topic": "computer hardware",
+        "text": "Which component of a computer is responsible for executing instructions of a program?",
+        "type": "mcq",
+        "correct_answer": "Central Processing Unit (CPU)",
+        "options": [
+            "Graphics Processing Unit (GPU)",
+            "Central Processing Unit (CPU)",
+            "Random Access Memory (RAM)",
+            "Solid State Drive (SSD)"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 4,
+        "times_correct": 4
+    },
+    {
+        "id": "90cc9e19-4e87-4b7a-bbd4-49f33217bb07",
+        "topic": "computer hardware",
+        "text": "Explain the role of the northbridge in a traditional computer architecture.",
+        "type": "freeform",
+        "correct_answer": "The northbridge is a chipset component that connects the CPU to high-speed devices such as RAM and the graphics card, managing communication between them.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 3,
+        "times_correct": 1
+    },
+    {
+        "id": "2061a8aa-054f-4fb8-b14e-e49c53751d5b",
+        "topic": "computer hardware",
+        "text": "Which type of RAM retains its contents when power is turned off?",
+        "type": "mcq",
+        "correct_answer": "None of the above",
+        "options": [
+            "DRAM",
+            "SRAM",
+            "DDR SDRAM",
+            "None of the above"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 4,
+        "times_correct": 3
+    },
+    {
+        "id": "6a97d841-ba1a-498e-82d6-fc348de1aada",
+        "topic": "computer hardware",
+        "text": "What is the primary purpose of the BIOS in a computer system?",
+        "type": "freeform",
+        "correct_answer": "The BIOS initializes and tests hardware at startup and provides a runtime environment for the operating system to interface with the hardware.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 5,
+        "times_correct": 0
+    },
+    {
+        "id": "ddc15f5b-d1a8-4205-bd90-67fb39367bba",
+        "topic": "computer hardware",
+        "text": "Which of the following interfaces provides the fastest data transfer rate for storage devices?",
+        "type": "mcq",
+        "correct_answer": "NVMe over PCIe",
+        "options": [
+            "SATA III",
+            "USB 3.0",
+            "NVMe over PCIe",
+            "IDE"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "e8141d38-ec99-498f-a754-03409255c4fe",
+        "topic": "climate",
+        "text": "Which greenhouse gas has the highest global warming potential over a 100-year period?",
+        "type": "mcq",
+        "correct_answer": "Nitrous oxide",
+        "options": [
+            "Carbon dioxide",
+            "Methane",
+            "Nitrous oxide",
+            "Ozone"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 6,
+        "times_correct": 4
+    },
+    {
+        "id": "d85918f0-ca24-4432-abd8-4d4b9a33167d",
+        "topic": "climate",
+        "text": "Explain how the albedo effect influences global temperatures and how it is affected by climate change.",
+        "type": "freeform",
+        "correct_answer": "The albedo effect refers to the reflection of solar radiation from Earth's surface. Surfaces like ice and snow have high albedo and reflect more sunlight, cooling the planet. As climate change reduces ice and snow cover, darker surfaces like ocean and soil absorb more heat, amplifying warming.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "2e4c998c-6f5c-4c27-a267-d688c1dfac83",
+        "topic": "climate",
+        "text": "Which of the following is most directly responsible for the long-term trapping of heat in Earth\u2019s atmosphere?",
+        "type": "mcq",
+        "correct_answer": "Greenhouse gases",
+        "options": [
+            "Solar flares",
+            "Greenhouse gases",
+            "Volcanic eruptions",
+            "Ozone layer"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "e0b89bc6-9544-4990-b723-56d0a63f8d46",
+        "topic": "climate",
+        "text": "Describe two feedback mechanisms that can either amplify or dampen climate change.",
+        "type": "freeform",
+        "correct_answer": "Examples include the ice-albedo feedback (amplifies warming) and increased cloud cover from evaporation (can cool or warm depending on type of clouds).",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 4,
+        "times_correct": 0
+    },
+    {
+        "id": "da6ef3cc-c9d4-4e5a-b80f-8f82217afc89",
+        "topic": "llm models",
+        "text": "Which of the following best describes the purpose of the attention mechanism in large language models (LLMs)?",
+        "type": "mcq",
+        "correct_answer": "To weigh the importance of different input tokens when generating output",
+        "options": [
+            "To store the entire training dataset for later retrieval",
+            "To compress input sequences into fixed-size vectors",
+            "To weigh the importance of different input tokens when generating output",
+            "To prevent overfitting by randomly dropping units during training"
+        ],
+        "source": "generated",
+        "enabled": false,
+        "times_shown": 1,
+        "times_correct": 1
+    },
+    {
+        "id": "6c5c9960-782c-4f05-b026-d56b67bd1bcf",
+        "topic": "llm models",
+        "text": "Explain the concept of 'tokenization' in the context of training large language models.",
+        "type": "freeform",
+        "correct_answer": "Tokenization is the process of converting raw text into smaller units, such as words or subwords, that can be processed by the model.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 0
+    },
+    {
+        "id": "81e54c4c-2318-40d8-8fae-e87523fec739",
+        "topic": "llm models",
+        "text": "Which of the following is a common training objective for autoregressive language models like GPT?",
+        "type": "mcq",
+        "correct_answer": "Next token prediction",
+        "options": [
+            "Masked token classification",
+            "Next token prediction",
+            "Sentence pair classification",
+            "Document summarization"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 2
+    },
+    {
+        "id": "1adf50a8-c55c-47be-94fa-d558171d0f05",
+        "topic": "llm models",
+        "text": "Describe one major limitation of large language models when it comes to reasoning or factual accuracy.",
+        "type": "freeform",
+        "correct_answer": "LLMs may generate plausible but incorrect or nonsensical answers because they lack true understanding and rely on patterns in training data.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 5,
+        "times_correct": 1
+    },
+    {
+        "id": "2d747783-779a-42ba-b896-f72a098ab4c9",
+        "topic": "llm models",
+        "text": "Which component of a Transformer architecture is primarily responsible for capturing dependencies between distant tokens?",
+        "type": "mcq",
+        "correct_answer": "Self-attention mechanism",
+        "options": [
+            "Feedforward neural network",
+            "Embedding layer",
+            "Self-attention mechanism",
+            "Positional encoding"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 4,
+        "times_correct": 2
+    },
+    {
+        "id": "026bac25-ef88-4253-a9ed-0b9054e8ba4a",
+        "topic": "Marketing",
+        "text": "Which of the following best describes the concept of 'market segmentation'?",
+        "type": "mcq",
+        "correct_answer": "Dividing a market into distinct groups with shared needs or characteristics",
+        "options": [
+            "Combining different markets to increase reach",
+            "Setting prices based on competitor analysis",
+            "Dividing a market into distinct groups with shared needs or characteristics",
+            "Creating a single product for the entire market"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 1
+    },
+    {
+        "id": "5581a17a-1224-484d-b6a5-afd7f987cbb9",
+        "topic": "Marketing",
+        "text": "Explain the difference between inbound and outbound marketing strategies.",
+        "type": "freeform",
+        "correct_answer": "Inbound marketing focuses on attracting customers through content and engagement, while outbound marketing involves proactively reaching out to consumers through traditional advertising methods.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "195b1edc-a61f-4f62-ac7c-79aa47d7d77a",
+        "topic": "Marketing",
+        "text": "Which pricing strategy involves setting a high initial price for a new product to maximize profits from early adopters?",
+        "type": "mcq",
+        "correct_answer": "Price skimming",
+        "options": [
+            "Penetration pricing",
+            "Psychological pricing",
+            "Price skimming",
+            "Competitive pricing"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 0
+    },
+    {
+        "id": "30a0c548-9e31-4852-8474-f32971eb7068",
+        "topic": "Marketing",
+        "text": "How does the concept of the '4 Ps' (Product, Price, Place, Promotion) guide marketing strategy development?",
+        "type": "freeform",
+        "correct_answer": "The 4 Ps provide a framework for identifying key components in marketing strategy by focusing on the product offering, pricing strategy, distribution channels, and promotional tactics to meet customer needs and drive sales.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "99e1a902-39af-4fd8-a1fe-88c2d7fb1ecd",
+        "topic": "marketing",
+        "text": "Which of the following is an example of a psychographic segmentation variable in marketing?",
+        "type": "mcq",
+        "correct_answer": "Lifestyle",
+        "options": [
+            "Age",
+            "Income",
+            "Lifestyle",
+            "Geographic location"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "55ed4830-c4a9-4ee9-bbb7-f61c78a155b1",
+        "topic": "marketing",
+        "text": "Explain the concept of the marketing mix and identify its four core components.",
+        "type": "freeform",
+        "correct_answer": "The marketing mix refers to the set of actions a company uses to promote its brand or product in the market. The four core components are Product, Price, Place, and Promotion.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "4c6fb558-2f3c-4fd3-8386-4011b1bb5309",
+        "topic": "marketing",
+        "text": "In the BCG matrix, which category includes products with high market share but low market growth?",
+        "type": "mcq",
+        "correct_answer": "Cash Cows",
+        "options": [
+            "Stars",
+            "Cash Cows",
+            "Question Marks",
+            "Dogs"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 0
+    },
+    {
+        "id": "f81d6dfb-3e88-400e-b8b9-397b1e2080bd",
+        "topic": "marketing",
+        "text": "Describe the difference between inbound and outbound marketing strategies.",
+        "type": "freeform",
+        "correct_answer": "Inbound marketing focuses on attracting customers through content creation, SEO, and social media, while outbound marketing involves traditional methods like cold calls, advertisements, and direct mail to push messages to consumers.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "7601e612-efdb-44df-8e04-4fb3f6444af8",
+        "topic": "marketing",
+        "text": "Which pricing strategy involves setting a high initial price for a new product to maximize revenue from early adopters?",
+        "type": "mcq",
+        "correct_answer": "Price Skimming",
+        "options": [
+            "Penetration Pricing",
+            "Psychological Pricing",
+            "Price Skimming",
+            "Loss Leader Pricing"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 1
+    },
+    {
+        "id": "c42b5f2e-872d-4e51-9038-7216d6243beb",
+        "topic": "financial markets",
+        "text": "Which of the following best describes the primary function of a secondary financial market?",
+        "type": "mcq",
+        "correct_answer": "To provide liquidity by enabling the trading of existing securities",
+        "options": [
+            "To issue new stocks and bonds to raise capital",
+            "To regulate interest rates and monetary policy",
+            "To provide liquidity by enabling the trading of existing securities",
+            "To insure investors against financial losses"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 0
+    },
+    {
+        "id": "132918df-0f8b-4939-89b8-4550a500fc4e",
+        "topic": "financial markets",
+        "text": "Explain how arbitrage opportunities can lead to market efficiency in financial markets.",
+        "type": "freeform",
+        "correct_answer": "Arbitrage opportunities allow traders to buy low and sell high across markets, and their actions help equalize prices, thus contributing to market efficiency.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "cac7f415-9214-4fea-9862-7396f9c9633c",
+        "topic": "financial markets",
+        "text": "Which of the following is a characteristic of a bearish market?",
+        "type": "mcq",
+        "correct_answer": "Falling prices and pessimism among investors",
+        "options": [
+            "Rising prices and high investor confidence",
+            "Stable prices and low trading volume",
+            "Falling prices and pessimism among investors",
+            "High inflation and interest rate hikes"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "e3d216aa-b361-4a9f-90f2-883999179ea6",
+        "topic": "financial markets",
+        "text": "Describe the role of credit rating agencies in financial markets.",
+        "type": "freeform",
+        "correct_answer": "Credit rating agencies assess the creditworthiness of issuers of debt securities, helping investors evaluate the risk of default.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "d4ba6fe0-a14e-401c-aacd-691b2051e756",
+        "topic": "financial markets",
+        "text": "Which financial instrument is typically used to hedge against interest rate risk?",
+        "type": "mcq",
+        "correct_answer": "Interest rate swap",
+        "options": [
+            "Equity option",
+            "Credit default swap",
+            "Interest rate swap",
+            "Treasury bill"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "a6597f8c-e12b-425e-a9d3-12cdff77788f",
+        "topic": "climate",
+        "text": "Which greenhouse gas is the most potent in terms of heat-trapping ability per molecule?",
+        "type": "mcq",
+        "correct_answer": "Methane",
+        "options": [
+            "Carbon Dioxide",
+            "Methane",
+            "Nitrous Oxide",
+            "Ozone"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "fd267d9b-d0b4-49ae-a0ab-6b3536e27e53",
+        "topic": "climate",
+        "text": "Explain the role of the albedo effect in Earth's climate system.",
+        "type": "freeform",
+        "correct_answer": "The albedo effect refers to the reflectivity of Earth's surface; surfaces with high albedo, like ice and snow, reflect more solar radiation, which helps cool the planet, while darker surfaces absorb more heat, contributing to warming.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 2,
+        "times_correct": 0
+    },
+    {
+        "id": "b2ebba2a-ff35-4508-85cf-80b3e5c7c095",
+        "topic": "climate",
+        "text": "Which of the following phenomena is primarily responsible for the weakening of the polar vortex?",
+        "type": "mcq",
+        "correct_answer": "Arctic amplification",
+        "options": [
+            "Ocean acidification",
+            "Arctic amplification",
+            "Deforestation",
+            "El Ni\u00f1o"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "f812d551-485d-4ef3-ae8d-86644bbcac29",
+        "topic": "climate",
+        "text": "Describe how deforestation contributes to global climate change.",
+        "type": "freeform",
+        "correct_answer": "Deforestation leads to increased atmospheric CO\u2082 levels because trees that absorb CO\u2082 are removed, and the process of clearing forests often releases stored carbon, contributing to the greenhouse effect and climate change.",
+        "options": null,
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 0,
+        "times_correct": 0
+    },
+    {
+        "id": "c8e2b86d-3323-4364-aec2-f8ef3b0459ba",
+        "topic": "climate",
+        "text": "Which ocean current plays a key role in regulating climate by transporting warm water from the tropics to the North Atlantic?",
+        "type": "mcq",
+        "correct_answer": "The Gulf Stream",
+        "options": [
+            "The Kuroshio Current",
+            "The Gulf Stream",
+            "The Antarctic Circumpolar Current",
+            "The Humboldt Current"
+        ],
+        "source": "generated",
+        "enabled": true,
+        "times_shown": 1,
+        "times_correct": 1
+    }
+]

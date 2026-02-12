@@ -80,10 +80,8 @@ class LLMClient:
                     options=q_data.get("options"),
                     source="generated"
                 )
-            #Append questions to the list
                 questions.append(question)
 
-            #Return a list of Questions
             return questions
 
         except json.JSONDecodeError as e:
