@@ -199,33 +199,55 @@ def manage_questions(quiz_manager: QuizManager) -> None:
 
     while True:
         print("\n1. List all questions")
-        print("2. Enable/Disable question")
+        print("2. Enable/Disable question by ID")
         print("3. Back to main menu")
 
         choice = input("\nEnter choice: ").strip()
 
         if choice == "1":
-            #List all questions
-            for i, q in enumerate(quiz_manager.questions, 1):
+            # List all questions with their IDs
+            for q in quiz_manager.questions:
                 status = "✓" if q.enabled else "✗"
-                print(f"\n{i}. [{status}] {q.text[:60]}...")
-                print(f"   Topic: {q.topic} | Type: {q.type}")
-                print(f"   Stats: {q.times_shown} shown, {q.times_correct} correct")
+                print(f"\n[{status}] ID: {q.id}")
+                print(f"    Topic: {q.topic} | Type: {q.type}")
+                print(f"    Question: {q.text[:80]}...")
+                print(f"    Stats: {q.times_shown} shown, {q.times_correct} correct")
 
         elif choice == "2":
-            #Enable/Disable
-            try:
-                q_num = int(input("Enter question number: ").strip())
-                if 1 <= q_num <= len(quiz_manager.questions):
-                    question = quiz_manager.questions[q_num - 1]
-                    question.enabled = not question.enabled
-                    quiz_manager.save_questions()
-                    status = "enabled" if question.enabled else "disabled"
-                    print(f"Question {q_num} {status}!")
-                else:
-                    print("Invalid question number!")
-            except ValueError:
-                print("Invalid input!")
+            # Enable/Disable by ID
+            question_id = input("\nEnter question ID: ").strip()
+
+            # Find question by ID
+            question = quiz_manager.find_question_by_id(question_id)
+
+            if not question:
+                print("Question ID not found!")
+                continue
+
+            # Display question information
+            print(f"\n{'='*60}")
+            print(f"Question: {question.text}")
+            print(f"Correct Answer: {question.correct_answer}")
+            if question.options:
+                print("Options:")
+                for idx, option in enumerate(question.options, 1):
+                    print(f"  {idx}. {option}")
+            print(f"Topic: {question.topic}")
+            print(f"Type: {question.type}")
+            print(f"Current Status: {'Enabled' if question.enabled else 'Disabled'}")
+            print(f"{'='*60}")
+
+            # Ask for confirmation
+            action = "disable" if question.enabled else "enable"
+            confirm = input(f"\nDo you want to {action} this question? (y/n): ").strip().lower()
+
+            if confirm == 'y':
+                question.enabled = not question.enabled
+                quiz_manager.save_questions()
+                new_status = "enabled" if question.enabled else "disabled"
+                print(f"\nQuestion {new_status}!")
+            else:
+                print("\nAction cancelled.")
 
         elif choice == "3":
             break

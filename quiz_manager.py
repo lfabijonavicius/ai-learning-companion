@@ -69,3 +69,10 @@ class QuizManager:
         #Select up to 'count' questions, or all available if fewer
         actual_count = min(count, len(enabled))
         return random.sample(enabled, actual_count)
+
+    def find_question_by_id(self, question_id: str) -> Optional[Question]:
+        """Find a question by its UUID"""
+        for question in self.questions:
+            if question.id == question_id:
+                return question
+        return None

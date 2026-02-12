@@ -3,7 +3,7 @@
 An AI-powered study tool that generates questions, tracks performance, and helps you learn effectively.
 
 ## Features
-- Generate questions using OpenAI's GPT
+- Generate questions using OpenAI's LLM
 - Practice mode with weighted selection
 - Test mode with scoring
 - Performance statistics tracking

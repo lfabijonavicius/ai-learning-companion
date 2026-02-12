@@ -5,7 +5,7 @@ from question import Question
 import json
 
 # OpenAI API Configuration Constants
-DEFAULT_MODEL = "chatgpt-4o-latest"
+DEFAULT_MODEL = "gpt-4o-mini"
 QUESTION_GENERATION_TEMPERATURE = 0.8  # Higher creativity for diverse questions
 ANSWER_EVALUATION_TEMPERATURE = 0.2    # Lower for consistent, strict grading
 
@@ -118,19 +118,25 @@ class LLMClient:
                     user_answer = question.options[option_index]
             return user_answer == question.correct_answer
         
+        # Freeform AI grade evaluation 
         else:
-            prompt = f"""You are a strict quiz grader.
+            prompt = f"""You are a quiz grader. Grade answers based on meaning, not exact wording.
 
 Question: {question.text}
 Correct answer: {question.correct_answer}
 User's answer: {user_answer}
 
-Must follow these rules for grading!
-1. If user says "I don't know", "not sure", "no idea", -> Return "incorrect"
-2. If the answer is blank or just whitespace -> Return "incorrect"
-3. If the answer is completely unrelated to the question -> Return "incorrect"
-4. If the answer is missing key facts from the correct answer -> Return "incorrect"
-5. Only return "correct" if the answer demonstrates actual knowledge of the topic
+Grading rules:
+1. If user says "I don't know", "not sure", "no idea", or leaves it blank -> Return "incorrect"
+2. If the answer is completely unrelated to the question -> Return "incorrect"
+3. If the answer is missing key facts from the correct answer -> Return "incorrect"
+4. If the answer is semantically correct (same meaning) even with different wording, spelling, or formatting -> Return "correct"
+5. Accept answers that demonstrate actual knowledge of the topic, even if worded differently
+
+Examples:
+- "COVID-19 pandemic" vs "covid 19" -> BOTH CORRECT (same meaning)
+- "Paris Agreement" vs "paris agreement" -> BOTH CORRECT (case doesn't matter)
+- "World War 2" vs "WW2" vs "WWII" -> ALL CORRECT (same meaning)
 
 You must respond with EXACTLY one word: "correct" or "incorrect"
 No explanations, no extra text."""
