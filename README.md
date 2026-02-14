@@ -12,7 +12,13 @@ An AI-powered study tool that generates questions, tracks performance, and helps
 
 ## Setup
 1. Install dependencies: `pip install openai python-dotenv pytest`
-2. Add your OpenAI API key to `.env` file
+2. Create a `.env` file in the project root (the folder containing `main.py`):
+   - **Terminal:** Run `echo "OPENAI_API_KEY=your-api-key-here" > .env`
+   - **VSCode:** Right-click the project folder → "New File" → name it `.env` → add:
+     ```
+     OPENAI_API_KEY=your-api-key-here
+     ```
+   - Note: Files starting with `.` are hidden by default on macOS/Linux
 3. Run: `python main.py`
 
 ## Project Structure

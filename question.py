@@ -54,8 +54,8 @@ class Question:
         """Create a question using data from dictionary
         Load questions from JSON file"""
     
-    #cls() is used to call the constructor with data form dictionary
-    #Converts dictionary to question object,
+    #cls() is used to call the constructor with data from dictionary
+    #Converts dictionary to question object
         question = cls(
            topic = data["topic"],
            text = data["text"],
