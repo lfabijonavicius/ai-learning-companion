@@ -11,7 +11,7 @@ An AI-powered study tool that generates questions, tracks performance, and helps
 - Question management (enable/disable)
 
 ## Setup
-1. Install dependencies: `pip install openai python-dotenv pytest`
+1. Install dependencies: `pip install -r requirements.txt`
 2. Create a `.env` file in the project root (the folder containing `main.py`):
    - **Terminal:** Run `echo "OPENAI_API_KEY=your-api-key-here" > .env`
    - **VSCode:** Right-click the project folder → "New File" → name it `.env` → add:
